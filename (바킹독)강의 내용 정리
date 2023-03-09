@@ -90,4 +90,20 @@ STL stack사용하여 가능
   S.pop(); // empty
   if(S.empty()) cout << "S is empty\n"; // S is empty
   cout << S.top() << '\n'; // runtime error 발생
+  
+ 0x06(queue) FIFO(First Input First Out)
+  queue<int> Q;
+  Q.push(10); // 10
+  Q.push(20); // 10 20
+  Q.push(30); // 10 20 30
+  cout << Q.size() << '\n'; // 3
+  if(Q.empty()) cout << "Q is empty\n";
+  else cout << "Q is not empty\n"; // Q is not empty
+  Q.pop(); // 20 30
+  cout << Q.front() << '\n'; // 20
+  cout << Q.back() << '\n'; // 30
+  Q.push(40); // 20 30 40
+  Q.pop(); // 30 40
+  cout << Q.front() << '\n'; // 30
+
 
