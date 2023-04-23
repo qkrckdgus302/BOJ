@@ -206,4 +206,45 @@ BFS,DFS 연관된 문제를 풀기위해서 먼저수강하였음.
 11724 연결 요소의 개수 BFS,DFS(스택,재귀) 모두 구현가능한문제 BFS로 풀이하였음.
 1260 DFS와 BFS 스택 DFS와, 일반 BFS 두가지 방법을 선택하여풀었음.
 
+0x19 트리
+
+특정 노드를 기준으로 부모노드를 제외하고 자식노드만 방문하는식으로 순회할 수 있다.
+
+11725 트리의 부모 찾기 해결하였음.
+int n;
+vector<int> adj[100001];
+int p[100001];
+
+void dfs(int cur) {
+  for (int nxt : adj[cur]) {
+    if (p[cur] == nxt) continue;
+    p[nxt] = cur;
+    dfs(nxt);
+  }
+}
+1991 트리 순회
+void preorder(int cur)
+{
+	cout << char(cur - 1 + 'A');
+	if (lc[cur] != 0) preorder(lc[cur]);
+	if (rc[cur] != 0) preorder(rc[cur]);
+}
+
+void inorder(int cur)
+{
+	
+	if (lc[cur] != 0) inorder(lc[cur]);
+	cout << char(cur - 1 + 'A');
+	if (rc[cur] != 0) inorder(rc[cur]);
+}
+
+void postorder(int cur)
+{
+
+	if (lc[cur] != 0) postorder(lc[cur]);
+	if (rc[cur] != 0) postorder(rc[cur]);
+	cout << char(cur - 1 + 'A');
+}
+해결하였음.
+
 
