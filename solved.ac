@@ -33,3 +33,8 @@ q를 이용하면 간단한문제임.
 받은 숫자를 to_string method를 활용하여 문자열로 변경하여 6 6 6이 연속으로 세번등장하는지 체크하고 만약에 연속으로 3번등장했다면 break문으로
 for문으로 탈출하는 방법이 가장 간단하다는 생각이 들었다.
 https://cryptosalamander.tistory.com/43
+
+
+15829 Hashing
+
+(a+b) % Mod = (a%Mod + a%Mod) % Mod 같은 원리를 이용하는것
