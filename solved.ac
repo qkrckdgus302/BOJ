@@ -53,7 +53,7 @@ https://cryptosalamander.tistory.com/43
 고려하지 않았음.
 	else if(sum > m)
 		{
-			result = mid;
+			result = mid; // 이부분이 반드시 필요함.
 			st = mid + 1;
 		}
 		else
