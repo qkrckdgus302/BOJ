@@ -38,3 +38,9 @@ https://cryptosalamander.tistory.com/43
 15829 Hashing
 
 (a+b) % Mod = (a%Mod + a%Mod) % Mod 같은 원리를 이용하는것
+
+
+1874 스택수열
+틀린이유
+1.vector를 사용하여 문자를 집어넣고 나중에 출력하는 아이디어에 대해서 생각하지 못했음.
+2.if , else if, else 조건을 잘못생각함. else if s.top==num 조건과 else케이스가 필요하다는 부분을 생각하지 못했음.
